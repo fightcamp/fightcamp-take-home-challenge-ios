@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		943C940B258D13AA001D8782 /* PackageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943C940A258D13AA001D8782 /* PackageSelectionViewController.swift */; };
 		943C9411258D208E001D8782 /* PackageCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943C9410258D208E001D8782 /* PackageCardCollectionViewCell.swift */; };
+		943C9417258D2D38001D8782 /* PackageThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943C9416258D2D38001D8782 /* PackageThumbnailCollectionViewCell.swift */; };
+		943C941A258D31B7001D8782 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943C9419258D31B7001D8782 /* ArrayExtension.swift */; };
+		94A554FD258D48D500D04AB9 /* NSLayoutConstraintSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A554FC258D48D500D04AB9 /* NSLayoutConstraintSet.swift */; };
+		94A55500258D48E900D04AB9 /* CellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A554FF258D48E900D04AB9 /* CellItem.swift */; };
+		94A55503258D492C00D04AB9 /* PackageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A55502258D492C00D04AB9 /* PackageCellViewModel.swift */; };
+		94A55506258D494700D04AB9 /* PackageSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A55505258D494700D04AB9 /* PackageSelectionViewModel.swift */; };
+		94A5550F258D49B400D04AB9 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A5550E258D49B400D04AB9 /* Package.swift */; };
+		94A55513258D51CA00D04AB9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A55512258D51CA00D04AB9 /* APIClient.swift */; };
 		C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD9779249AC04D0044B734 /* AppDelegate.swift */; };
 		C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD977B249AC04D0044B734 /* SceneDelegate.swift */; };
 		C1BD9783249AC04E0044B734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BD9782249AC04E0044B734 /* Assets.xcassets */; };
@@ -24,6 +32,14 @@
 /* Begin PBXFileReference section */
 		943C940A258D13AA001D8782 /* PackageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageSelectionViewController.swift; sourceTree = "<group>"; };
 		943C9410258D208E001D8782 /* PackageCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		943C9416258D2D38001D8782 /* PackageThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		943C9419258D31B7001D8782 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		94A554FC258D48D500D04AB9 /* NSLayoutConstraintSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintSet.swift; sourceTree = "<group>"; };
+		94A554FF258D48E900D04AB9 /* CellItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellItem.swift; sourceTree = "<group>"; };
+		94A55502258D492C00D04AB9 /* PackageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCellViewModel.swift; sourceTree = "<group>"; };
+		94A55505258D494700D04AB9 /* PackageSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageSelectionViewModel.swift; sourceTree = "<group>"; };
+		94A5550E258D49B400D04AB9 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		94A55512258D51CA00D04AB9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		C1BD9776249AC04D0044B734 /* FC-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FC-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BD9779249AC04D0044B734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1BD977B249AC04D0044B734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +68,7 @@
 		943C9408258D133E001D8782 /* App Flows */ = {
 			isa = PBXGroup;
 			children = (
+				94A554FB258D48C700D04AB9 /* Utils */,
 				943C9409258D1392001D8782 /* Package Selection */,
 			);
 			path = "App Flows";
@@ -61,9 +78,37 @@
 			isa = PBXGroup;
 			children = (
 				943C940A258D13AA001D8782 /* PackageSelectionViewController.swift */,
+				94A55505258D494700D04AB9 /* PackageSelectionViewModel.swift */,
+				94A55502258D492C00D04AB9 /* PackageCellViewModel.swift */,
 				943C9410258D208E001D8782 /* PackageCardCollectionViewCell.swift */,
+				943C9416258D2D38001D8782 /* PackageThumbnailCollectionViewCell.swift */,
 			);
 			path = "Package Selection";
+			sourceTree = "<group>";
+		};
+		94A554FB258D48C700D04AB9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				94A554FC258D48D500D04AB9 /* NSLayoutConstraintSet.swift */,
+				94A554FF258D48E900D04AB9 /* CellItem.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		94A5550D258D49AC00D04AB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94A5550E258D49B400D04AB9 /* Package.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94A55511258D518500D04AB9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				94A55512258D51CA00D04AB9 /* APIClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		C1BD976D249AC04D0044B734 = {
@@ -85,6 +130,8 @@
 		C1BD9778249AC04D0044B734 /* FightCamp-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				94A55511258D518500D04AB9 /* Networking */,
+				94A5550D258D49AC00D04AB9 /* Models */,
 				943C9408258D133E001D8782 /* App Flows */,
 				C1FD02AB249B23E10029487C /* Helpers */,
 				C1BD979A249AFF0C0044B734 /* Assets */,
@@ -113,6 +160,7 @@
 				C1BD978E249AC0790044B734 /* Colors.swift */,
 				C1BD9790249AC0810044B734 /* Fonts.swift */,
 				C1FD02AC249B23F30029487C /* Layout.swift */,
+				943C9419258D31B7001D8782 /* ArrayExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -190,10 +238,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943C9417258D2D38001D8782 /* PackageThumbnailCollectionViewCell.swift in Sources */,
+				94A55503258D492C00D04AB9 /* PackageCellViewModel.swift in Sources */,
+				94A55500258D48E900D04AB9 /* CellItem.swift in Sources */,
+				94A55506258D494700D04AB9 /* PackageSelectionViewModel.swift in Sources */,
 				943C940B258D13AA001D8782 /* PackageSelectionViewController.swift in Sources */,
 				C1BD9791249AC0810044B734 /* Fonts.swift in Sources */,
+				943C941A258D31B7001D8782 /* ArrayExtension.swift in Sources */,
+				94A554FD258D48D500D04AB9 /* NSLayoutConstraintSet.swift in Sources */,
+				94A55513258D51CA00D04AB9 /* APIClient.swift in Sources */,
 				C1BD978F249AC0790044B734 /* Colors.swift in Sources */,
 				943C9411258D208E001D8782 /* PackageCardCollectionViewCell.swift in Sources */,
+				94A5550F258D49B400D04AB9 /* Package.swift in Sources */,
 				C1FD02AD249B23F30029487C /* Layout.swift in Sources */,
 				C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */,
 				C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */,
@@ -321,16 +377,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N7DJ322W5H;
+				DEVELOPMENT_TEAM = GXS8378HLM;
 				INFOPLIST_FILE = "FightCamp-Homework/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fightcamp.homework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fightcamp.homeworkarstasrtrttts;
 				PRODUCT_NAME = "FC-Homework";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -340,16 +398,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N7DJ322W5H;
+				DEVELOPMENT_TEAM = GXS8378HLM;
 				INFOPLIST_FILE = "FightCamp-Homework/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fightcamp.homework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fightcamp.homeworkarstasrtrttts;
 				PRODUCT_NAME = "FC-Homework";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
