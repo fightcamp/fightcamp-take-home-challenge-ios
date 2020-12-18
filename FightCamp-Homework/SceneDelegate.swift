@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     window = .init(windowScene: windowScene)
 
-    window?.rootViewController = CheckoutPlanSelectionViewController(viewModel: CheckoutPlanSelectionViewModel())
+    window?.rootViewController = PackageSelectionViewController(viewModel: CheckoutPlanSelectionViewModel(client: LocalAPIClient()))
     
     window?.makeKeyAndVisible()
   }
